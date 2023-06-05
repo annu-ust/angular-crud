@@ -1,0 +1,12 @@
+<p>create works!</p>
+<h3>Save a Student</h3>
+<form (ngSubmit)="onSubmit()"><!--we are calling a method we have to create a method on component file-->
+    <div class="form-group">
+        <label for="">name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="student.name" name="name"><br>
+        <label for="">department</label>
+        <input type="text" class="form-control" id="dept" [(ngModel)]="student.dept" name="dept">
+        
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
